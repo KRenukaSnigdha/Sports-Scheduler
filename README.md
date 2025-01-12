@@ -55,73 +55,21 @@ A Node.js-based application designed to help sports organizers manage and schedu
    ```bash
    git clone https://github.com/yourusername/sports-scheduler.git
    cd sports-scheduler
-# Online Reader System
-
-An Online Reader System that allows users to manage books, create personalized bookshelves, and track reading progress. This project simulates the core functionality of an e-library system with features such as user management, book ratings, and bookmarks.
-
----
-
-## Features
-
-### User Management:
-- Add, update, and manage user profiles.
-- Login and logout functionality.
-
-### Library Management:
-- Add and manage books in the library.
-- View all available books.
-
-### Bookshelf System:
-- Create and manage custom bookshelves (e.g., "Currently Reading", "Favorites").
-- Add or remove books from shelves.
-
-### Reading Experience:
-- Simulate reading with features like turning pages and tracking progress.
-- Bookmark pages for quick access.
-
-### Book Rating:
-- Rate books based on user preference.
-
-### Console-Based UI:
-- User-friendly interface to interact with the system.
-
----
-
-## Technologies Used
-- *Java*: Core programming language.
-- *OOP Principles*: Encapsulation, inheritance, and polymorphism for designing classes.
-- *Collections Framework*: To manage data structures like HashMap and ArrayList.
-- *Entity-Relationship Design*: For structuring user, bookshelf, and book data.
-
----
-
-## Getting Started
-
-### Prerequisites
-- Install Java Development Kit (JDK) version 8 or later.
-- IDE (e.g., IntelliJ IDEA, Eclipse, or Visual Studio Code) or a text editor.
-- Command-line interface (CLI) for compiling and running Java files.
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/KRenukaSnigdha/ONLINE-READER-SYSTEM.git
-   cd online-reader-system
     ```
+   
 2. Navigate to the src directory:
  ```bash
-cd src
+cd sports-scheduler
 ```
 
-3. Compile the project:
+3. Download dependencies:
  ```bash
-javac main/Main.java
+npm install
 ```
 
 4. Run the project:
  ```bash
-java main.Main
+node server.js
 ```
 
 
@@ -166,13 +114,13 @@ This will render the directory structure neatly in Markdown format.
 
 ## Future Enhancements
 
-Integration with a database (e.g., MySQL, PostgreSQL) for data persistence.
+Integration with a database (e.g., MySQL, PostgreSQL) for data persistence in full-structured manner.
 
 Web-based interface using frameworks like Spring Boot or React.
 
 Recommendation system based on user preferences.
 
-User authentication and roles (e.g., admin, reader).
+User authentication and roles (e.g., admin, reader) more professionally.
 
 
 
