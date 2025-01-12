@@ -59,17 +59,17 @@ A Node.js-based application designed to help sports organizers manage and schedu
    
 2. Navigate to the src directory:
  ```bash
-cd sports-scheduler
+  cd sports-scheduler
 ```
 
 3. Download dependencies:
  ```bash
-npm install
+   npm install
 ```
 
 4. Run the project:
  ```bash
-node server.js
+    node server.js
 ```
 
 
@@ -99,13 +99,13 @@ This will render the directory structure neatly in Markdown format.
 3. Availability: Players can mark their availability for events.
 
 
-4.Generate Schedules: Automatically generate schedules based on team availability.
+4. Generate Schedules: Automatically generate schedules based on team availability.
 
 
-5.Notifications: Get notified of event changes and updates.
+5. Notifications: Get notified of event changes and updates.
 
 
-6.Reports: View performance and attendance reports.
+6. Reports: View performance and attendance reports.
 
 
 
