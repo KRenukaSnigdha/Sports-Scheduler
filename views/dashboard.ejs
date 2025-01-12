@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamSync</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #161637;
+            padding: 20px 0;
+        }
+        header .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        header .nav-link:hover {
+            color: #548ca9;
+        }
+        main {
+            padding: 40px 20px;
+        }
+        .hero {
+            background-color: #5e8578af;
+            padding: 100px 20px;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+        }
+        .hero .cta-button {
+            background-color: #161637;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.125rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .hero .cta-button:hover {
+            background-color: #1a1c3a;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            margin-top: 60px;
+        }
+        .feature-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .feature-card p {
+            font-size: 1rem;
+            color: #7f8c8d;
+        }
+        .how-it-works {
+            background-color: #ecf0f1;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .how-it-works h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        .step {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 30%;
+            transition: transform 0.3s ease;
+        }
+        .step:hover {
+            transform: translateY(-10px);
+        }
+        .step h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .testimonials {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .testimonials h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+        .testimonial-cards {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        .testimonial-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .testimonial-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+        }
+        .testimonial-card p {
+            color: #7f8c8d;
+        }
+        .contact {
+            background-color: #5e8578af;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+
+        }
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: none;
+            background-color: #ecf0f1;
+        }
+        .contact form button {
+            background-color:#161637;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.125rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact form button:hover {
+            background-color: #161637;
+        }
+        footer {
+            background-color:#161637;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="max-w-screen-xl mx-auto flex justify-between items-center px-6">
+            <a href="/" class="text-3xl font-semibold text-white">TeamSync</a>
+            <div class="flex space-x-8">
+                <a href="/" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="/login" class="nav-link">Sign In</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>TeamSync: The Future of Team Collaboration</h1>
+        <p>Effortlessly manage your team, projects, and deadlines all in one place.</p>
+        <button class="cta-button">Get Started</button>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="feature-card">
+            <h3>Effortless Scheduling</h3>
+            <p>Easily create and manage schedules for your team without any hassle.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Real-Time Collaboration</h3>
+            <p>Collaborate on projects seamlessly and track progress in real-time.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Data Insights</h3>
+            <p>Get detailed insights into team productivity and project performance.</p>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>Step 1: Create Your Team</h3>
+                <p>Set up your team and define roles, tasks, and responsibilities.</p>
+            </div>
+            <div class="step">
+                <h3>Step 2: Assign Projects</h3>
+                <p>Assign projects and deadlines to each team member for seamless coordination.</p>
+            </div>
+            <div class="step">
+                <h3>Step 3: Track and Collaborate</h3>
+                <p>Monitor progress, provide feedback, and collaborate on tasks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <h3>Emily Roberts</h3>
+                <p>"TeamSync has revolutionized how our team collaborates and tracks projects. It's an essential tool for us."</p>
+            </div>
+            <div class="testimonial-card">
+                <h3>David Miller</h3>
+                <p>"We love the real-time features and how easy it is to keep track of everything in one place."</p>
+            </div>
+            <div class="testimonial-card">
+                <h3>Samantha Lee</h3>
+                <p>"The user-friendly interface and powerful features make TeamSync the perfect solution for our team."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Feel free to reach out to us, and we'll get back to you as soon as possible.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 TeamSync. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

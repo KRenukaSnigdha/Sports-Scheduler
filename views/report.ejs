@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sportify</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    .joined-btn {
+      background-color: #4CAF50; 
+      color: white;
+    }
+    .header-bg {
+      background: linear-gradient(90deg, #e894ba, #3a5a91); 
+      padding-top: 2rem; 
+      padding-bottom: 2rem; 
+    }
+    body {
+      padding: 1.5rem;
+      background: url('https://png.pngtree.com/background/20210716/original/pngtree-sports-background-picture-image_1340049.jpg'); 
+      border-radius: 0 0 0.5rem 0.5rem;
+      background-size: cover;
+    }
+    .main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  margin-top: 1rem;
+}
+
+.info-item {
+  margin-bottom: 1rem;
+}
+
+.info-text {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+  </style>
+</head>
+<body>
+  <header class="header-bg text-white">
+    <div class="container mx-auto px-4 flex items-center">
+      <h1 class="text-4xl font-bold flex-shrink-0">Sportify</h1>
+      <div class="flex-grow text-center">
+        <p class="text-3xl"><%= user.name %> | User</p>
+      </div>
+      <nav class="flex space-x-4 pr-4">
+        <a href="#home" class="text-2xl hover:text-gray-300">Home</a>
+        <a href="#sportsSection" class="text-2xl hover:text-gray-300">Sports</a>
+        <a href="#sessionsCreatedSection" class="text-2xl hover:text-gray-300">Sessions</a>
+        <a href="/logout" class="text-2xl hover:text-gray-300">Logout</a>
+      </nav>
+    </div>
+  </header>
+  <section id="existingSessionsSection" class="mt-8">
+    <h2 class="text-2xl font-semibold mb-4">Event Calendar</h2>
+    <% sessions.forEach(session => { %>
+      <div class="bg-white shadow-lg rounded-lg p-6 mb-4" id="session<%= session.id %>" style="background-color: #f1d0db; width: 600px;">
+        <h3 class="text-xl font-semibold mb-4"><%= session.sport_name %></h3>
+        <p><strong>Teams:</strong> <%= session.team1 %> vs <%= session.team2 %></p>
+        <p><strong>Date:</strong> <%= session.date %></p>
+        <p><strong>Venue:</strong> <%= session.venue %></p>
+        
+        </div>
+      </div>
+    <% }) %>
+  </section>
+</body>
+</html>
