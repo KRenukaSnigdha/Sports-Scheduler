@@ -78,7 +78,8 @@ A Node.js-based application designed to help sports organizers manage and schedu
 
 ## Project Structure
 
-![image](https://github.com/user-attachments/assets/4b668b9b-e063-4919-9bb5-e10d08b026d7)
+
+![Screenshot 2025-01-12 093602](https://github.com/user-attachments/assets/75c75b76-03f1-495f-b221-228f27f75dfd)
 
 
 
