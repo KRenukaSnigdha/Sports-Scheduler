@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+  background-image: url(https://th.bing.com/th/id/R.e5cb84fde68c696462b9d63b424a9d44?rik=h1mFBtxggCjxWg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fCool-Sports-Wallpaper-Free-Download.jpg&ehk=mW%2f15z4kUWSVSMjRafipwo6YzgqTklPHxYh8PZJ7IUw%3d&risl=&pid=ImgRaw&r=0);
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  padding-right: 660px; 
+  
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #4a4a4a;
+}
+
+label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  margin-bottom: 16px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #363739;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 110, 245, 0.3);
+}
+
+
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+  <div class="container max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
+    <form action="/login" method="POST">
+      <h1 class="text-4xl font-bold mb-8 text-center text-gray-800">Login</h1>
+      
+      <div class="mb-6">
+        <label for="email" class="block text-lg text-gray-700 font-medium mb-2">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="Enter your email"
+          autocomplete="off"
+          class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="mb-6">
+        <label for="password" class="block text-lg text-gray-700 font-medium mb-2">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          placeholder="Enter your password"
+          autocomplete="new-password"
+          class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      
+      <button
+        type="submit"
+        class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition duration-200 font-semibold text-lg" style="background-color: #363739;"
+      >
+        Login
+      </button>
+      <p class="mt-6 text-center text-gray-700 text-lg">
+        Don't have an account?
+        <a href="/register" class="text-red-500 hover:underline">Get Started</a>
+      </p>
+    </form>
+  </div>
+</body>
+</html>
