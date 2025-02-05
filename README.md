@@ -34,9 +34,7 @@ A Node.js-based application designed to help sports organizers manage and schedu
 
 - **Node.js**: JavaScript runtime for building the backend.
 - **Express**: Web framework for routing and handling HTTP requests.
-- **PostgreSQL**: Relational database for persistent data storage.
-- **Sequelize**: ORM for interacting with PostgreSQL.
-- **JWT (JSON Web Tokens)**: For user authentication and authorization.
+- **PostgreSQL**: Relational database for persistent data storage. 
 
 ---
 
