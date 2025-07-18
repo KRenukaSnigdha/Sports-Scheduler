@@ -129,7 +129,7 @@ User authentication and roles (e.g., admin, reader) more professionally.
 
 ## Resources
 
-- [Video Overview](https://www.youtube.com/watch?v=UMoaT14eiXc)
+- [Video Overview](https://www.youtube.com/watch?v=KPU31q4CShA)
 
 
 ---
